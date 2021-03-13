@@ -1,0 +1,580 @@
+  /* ///////////////////////////////////////////////////////////// */
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* ///////////////////////////////////////////////////////////// */
+
+/* Common css for all pages starts here */
+  @font-face {
+    font-family: aloja-extended;
+    src: url(font/Aloja-Light.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: aloja-ext;
+    src: url(font/aloja_ext.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: comingsoon;
+    src: url(font/ComingSoon.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: glacial;
+    src: url(font/GlacialIndifference-Regular.otf);
+  }
+
+/* background image for whole page */
+  .square-grid {
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAHlBMVEUAAABkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGSH0mEbAAAACnRSTlMAzDPDPPPYnGMw2CgMzQAAAChJREFUKM9jgAPOAgZMwGIwKkhXQSUY0BCCMxkEYUAsEM4cjI4fwYIAf2QMNbUsZjcAAAAASUVORK5CYII='); */ /* black line */
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAIAAABR6hviAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAITcAACE3ATNYn3oAAAA8SURBVDhPY/hPCNz81ANBUD5eMGocChg1DhegtnFw1VRBg9w4qKdxA7hSKB8vGDUOBYwahwsMZuP+/wcAbmJWHeLYS4gAAAAASUVORK5CYII='); */ /* graph  (greenline)*/
+   /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAIAAABR6hviAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAITcAACE3ATNYn3oAAAA/SURBVDhPY/z//z8DXvDq514IQ4zdGcLAA5igNJXAqHHkgxFlHOPLH3ugTGqAQe7Z0TxLNhg1jnwwmI1jYAAATY4OwbTDhDIAAAAASUVORK5CYII='); graph 1 png (light green line) */
+   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAIAAABR6hviAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAITcAACE3ATNYn3oAAAA6SURBVDhPY/hPBHj5Yw+URQgwMVAVjBpHPhg1jnxAZeMYgRkIyqQKgGY2vGA0z2IFo8aRDwazcQwMAD4+nWmrCvHoAAAAAElFTkSuQmCC');
+   background-size: 25px;
+    /* opacity: 0.5; */
+  }
+/* background image size set */
+  .full-size {
+    width: auto;
+    height: auto;
+  }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    font-family: aloja-ext;
+  }
+
+  .glacial{
+    font-family: glacial;
+  }
+
+  .coming-soon{
+    font-family: comingsoon;
+  }
+
+  .aloja{
+    font-family: aloja-ext;
+  }
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************     NAVBAR ENDS HERE   ************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/* navbar for mobile site starts here */
+  /* tried when doing navbar */
+  @media screen and (max-width: 767px){
+  .navbar{
+    font-size: 18PX;
+    background-image: linear-gradient(#ffde59,#ffde59);
+    /* border: 1px solid rgba(0,0,0,0.2); */
+    padding-bottom: 10px;
+   
+  }
+
+  .main-nav.closed{
+    max-height: 500px;
+  }
+
+  .main-nav{
+    list-style-type: none;
+    overflow-y: hidden;
+    max-height: 0px; /* approximate max height */
+    transition-property: all;
+    transition-duration: .5s;
+  list-style-type: none; 
+
+  }
+
+  .nav-links, .logo{
+    text-decoration: none;
+    color: black;
+  }
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo{
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 2px;
+  right:20px;
+  cursor: pointer;
+  color: rgba(5, 5, 5, 0.8);
+  font-size: 24px;
+}
+
+.active{
+  display: block;
+}
+}
+
+/* navbar for mobile sites ends here */
+
+/* navbar for desktop site start here */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 60px;
+      align-items: center;
+      font-size: 18PX;
+      background-image: linear-gradient(#ffde59,#ffde59);
+      /* border: 1px solid rgba(0,0,0,0.2); */
+      padding-bottom: 10px;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  list-style-type: none; 
+
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+
+  .nav-links {
+      margin-left: 40px;
+  }
+
+  .logo {
+      margin-top: 0;
+      margin-left: 20px;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+  .nav-links, .logo{
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
+/* navbar desktop site ends here */
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************     NAVBAR ENDS HERE   ************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/***************     FOOTER  STARTS HERE ************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+/* Footer for mobile version */
+
+/* .footer{
+  background:rgba(0,0,0);
+  height: 500px;
+  display: block;
+  margin-top:30px;
+  position: fixed;
+} */
+
+
+.footer {
+  box-sizing: border-box;
+    position: inherit;
+    height: 500px;
+    background-color: black;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    margin-top: 20%;
+    color: #ffde59;
+
+    /* float: left; */
+    /* width: 33.33%; */
+    /* padding: 10px; */
+}
+
+.footer:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 100%;
+}
+
+.logo_footer{
+  content: url(images/logo_V3.jpg);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px){
+
+  .footer {
+    box-sizing: border-box;
+      position: inherit;
+      height: 200px;
+      background-color: black;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+      margin-top: 20%;
+      color: #ffde59;
+      
+  }
+
+  .column{
+float: left;
+width: 33.33%;
+padding: 10px;
+  }
+.column_right{
+  float: right;
+  width: 33.33%;
+  padding: 10px;
+}
+  .logo_footer{
+    content: url(images/logo_V3.jpg);
+    background-repeat: no-repeat;
+    width: 10%;
+    height: auto;
+  }
+}
+
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************     FOOTER ENDS HERE   ************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/* Common css for all pages ends here */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* /////////////`*******************************`////////////////// /*/
+/* /////////////`********** INDEX HTML *************`///////////// /*/
+/* /////////////`*******************************`//////////////// /*/
+/* ////////////////////////////////////////////////////////////// */
+
+/* ///////////     index html css starts here      ///////////////////*/
+
+
+/* banner for mobile site start here */
+.banner{
+  content: url(images/banner_mobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  
+}
+
+/* banner for mobile site ends here */
+
+/* banner for desktop site start here */
+@media screen and (min-width: 768px) {
+  .banner{
+    content: url(images/banner-final-1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    
+  }
+}
+
+/* banner for desktop site ends here */
+
+/* operational structure desktop site starts here */
+
+@media screen and (max-width: 767px){
+  /* operational structure  banner starts here  */
+  .opstruct{
+    height: 450px;
+    width: auto;
+    overflow: hidden;
+    background-color: #ffde59;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .op{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 65px;
+  }
+  /* operational sturcture banner ends here */
+
+  /* operational structure concept design starts here */
+  .container-opstruct {
+    display: none;
+  }
+  
+  /* operational structure concept design ends here */
+}
+
+
+@media screen and (min-width: 768px) {
+
+  /* operational structure  banner starts here  */
+  .opstruct{
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+    background-color: #ffde59;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .op{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 65px;
+  }
+
+  /* operational sturcture banner ends here */
+
+  /* operational structure concept design starts here */
+  .container-opstruct{
+    margin-left: 15%;
+    width: 60%;
+    /* border: 10px solid black; */
+    padding: 10px;
+  }
+  .row1{
+    text-align: center;
+    position: relative;
+    margin-left: 200px;
+  }
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .opstruct-topsq{
+    float: left;
+  width: 50%;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  color: black;
+  }
+  .fs-fp{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: comingsoon;
+    color: #1e1e1e;
+  }
+  .fs-sp{
+    text-align: center;
+    font-size: 15px;
+    font-family: comingsoon;
+    line-height: 25px;
+    color: #232324;
+  }
+
+  .circle_div{
+    text-align: center;
+    position: relative;
+  }
+  .circle{
+    /* display: none; */
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    left: 15%;
+    top: 20%;
+    margin-left: 155px;
+  }
+  .centered-op-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered-c-text {
+    position: absolute;
+    top: 41%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+  .cp{
+    text-align: center;
+    font-family: comingsoon;
+    font-size: 20px;
+  }
+  
+  /* operational structure concept design ends here */
+
+}
+
+/* operational structure desktop site ends here */
+
+/* ///////////     index html css ends here      ///////////////////*/
+
+/* ///////////////////////////////////////////////////////////// */
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* ///////////////////////////////////////////////////////////// */
+
+
+/* About us page starts here */
+/* universal */
+.container{
+  height: 100%;
+  width: 100%;
+}
+.leftpane{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+  /* position: relative; */
+}
+.rightpane{
+  margin-top: 70px;
+  /* position: relative; */
+  top:50px;
+  
+}
+
+.toppane{
+  width: 100%;
+  height: 5px;
+  border-collapse: collapse;
+}
+
+.wwa{
+  padding: 16px 10px 16px 0px;
+}
+
+.om{
+  padding: 16px 10px 16px 0px;
+
+}
+/* mobile version ends */
+
+
+@media screen and (max-width: 767px){
+ .horizontal-bar{
+  width: 3rem;
+  height: 40rem;
+  position: inherit;
+  top: 15%;
+  bottom: 0;
+  border: 10px solid black;
+  border-left: none;
+  margin: 50px 0px;
+ }
+ .strike{
+  position: relative;
+  z-index: 1;
+  padding-left: 70px;
+  /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+}
+
+.strike:before {
+  border-top: 35px solid #ffde59;
+  content:"";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 60%; left: 0; right: 0; bottom: 0;
+  width: auto;
+  z-index: -1;
+}
+
+.para1{
+  margin: 35px 0px 30px 70px; 
+}
+
+.para{
+  margin: 0px 0px 25px 70px; 
+}
+
+
+}
+
+/* mobile view css ends*/
+
+/* desktop version  */
+
+@media screen and (min-width: 768px) {
+  .horizontal-bar{
+    width:7%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 10px solid black;
+    border-left: none;
+    margin-top: 150px;;
+  
+  }
+
+  .strike{
+    position: relative;
+    z-index: 1;
+    padding-left: 150px;
+    font-size: 50px;
+    /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+  }
+  
+  .strike:before {
+    border-top: 50px solid #ffde59;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 55%; left: 0; right: 0; bottom: 0;
+    width: auto;
+    z-index: -1;
+  }
+
+  .para1{
+  margin: 35px 0px 30px 150px; 
+
+  }
+
+  .para{
+    margin: 0px 0px 30px 150px; 
+  }
+}
+
+/* desktop version ends */
+
+
