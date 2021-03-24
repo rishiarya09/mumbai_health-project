@@ -263,6 +263,24 @@ li{
   margin-bottom: 10px;
 }
 
+.footer-col .contact a{
+  font-size: 16px;
+  /* text-transform: capitalize; */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col .contact a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+
+}
+
+
 .logo_footer{
   width: 200px;
 }
@@ -553,7 +571,7 @@ li{
 /* About us page starts here */
 /* universal */
 .container{
-  min-height: 100%;
+  height: 100%;
   width: 100%;
 }
 .leftpane{
