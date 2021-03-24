@@ -210,14 +210,14 @@
 
 .footer {
   box-sizing: border-box;
-    position: fixed;
+    position: inherit;
     height: 500px;
     background-color: black;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     color: #ffde59;
 
     /* float: left; */
@@ -246,14 +246,14 @@
 
   .footer {
     box-sizing: border-box;
-      position: relative;
+      position: inherit;
       height: 200px;
       background-color: black;
       bottom: 0px;
       left: 0px;
       right: 0px;
       margin-bottom: 0px;
-      margin-top: 10%;
+      /* margin-top: 10%; */
       color: #ffde59;
       
   }
@@ -343,13 +343,15 @@ padding: 10px;
 
   /* operational structure concept design starts here */
   .container-opstruct {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
   }
   
-  .containter_op{
-
+  .opstruct_img{
+    content: url(/images/fullimage.png);
+    width: 320px;
   }
-
   .centered-c-text {
     position: relative;
     top: 66%;
@@ -390,6 +392,9 @@ padding: 10px;
 @media screen and (min-width: 768px) {
 
   /* operational structure  banner starts here  */
+  .opstruct_img{
+    content: url(/images/fullimage.png);
+  }
   .opstruct{
     height: 200px;
     width: auto;
@@ -408,16 +413,21 @@ padding: 10px;
 
   /* operational structure concept design starts here */
   .container-opstruct{
-    margin-left: 5%;
-    margin-top: 10%;
-    width: 80%;
+    /* margin-left: 5%;
+    margin-top: 10%; */
+    /* width: 80%; */
     /* border: 10px solid black; */
-    padding: 10px;
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+
   }
   .row1{
     text-align: center;
     position: relative;
-    margin-left: 200px;
+    /* margin-left: 200px; */
   }
   .row1::after {
     content: "";
