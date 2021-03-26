@@ -972,3 +972,20 @@ ol, li {
 
 
 /* contact us page css ends here */
+
+/* what are we working towards page css start here */
+@media screen and (min-width: 768px) {
+  .heading{
+    padding-left: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading{
+    padding-left: 55px;
+  }
+}
+
+/* what are we working towards page css ends here */
+
+
