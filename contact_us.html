@@ -32,22 +32,23 @@
 
             </ul>
         </nav>
-
-        <div class="container">
+        <div class="container" style="display: flex; flex-wrap: wrap;">
             <div class="leftside">
                 <form class="contact-form" action="contactform.php" method="post">
-                    <input type="text" name="name" placeholder="Full name">
-                    <input type="text" name="mail" placeholder="your e-mail">
-                    <input type="text" name="subject" placeholder="subject">
-                    <textarea name="message" plcaeholder="Message"></textarea>
-                    <button type="submit" name="submit">Send Mail</button>
+                <h1 class="c_us">Contact Us</h1>
+                    <input type="text" id="txt_input" name="name" placeholder="Full name"> <br/>
+                    <input type="text" id="txt_input" name="mail" placeholder="your e-mail"><br/>
+                    <input type="text" id="txt_input" name="subject" placeholder="subject"><br/>
+                    <textarea name="message" placeholder="Message" id="message_area"></textarea><br/>
+  
+    <button type="submit" class="btn " name="submit">Send E-mail</button>
                 </form>
             </div>
-            <div class="rightside">
-
-            </div>
-
-        </div>
+        <div class="rightside">
+            <img src="images/mumbai_map.jpg" alt="mumbai_map" class="mum_map">
+           </div>
+    
+           </div>
 
         <footer class="footer">
             <div class="container-footer">

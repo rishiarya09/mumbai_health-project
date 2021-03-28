@@ -659,7 +659,7 @@ li{
 @media screen and (min-width: 768px) {
   .horizontal-bar{
     width:7%;
-    height: 55%;
+    height: 50%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -839,20 +839,162 @@ margin-top: 50px;
 
 @media screen and (min-width: 768px){
   
+  .contact-form{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    /* padding: 10%; */
+    width: 90%;
+    height: 85%;
+    margin: 4%;
+  }
+  .contact-form #txt_input:first-child{
+    margin-top: 8%;
+  }
+
+  #txt_input{
+    margin-top: 4%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 8%;
+    width: 80%;
+    padding-left: 5%;
+  }
+
+  #message_area{
+    height: 30%;
+    margin-top: 4%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .btn{
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0%;
+    height: 8%;
+    background-color: #ffde59;
+    border: none;
+    width: 30%;
+    color: black;
+    /* font-family: alo; */
+    margin-top: 2%;
+  }
 
   
-  
+  .mum_map{
+    height: 92%;
+    margin: 3% 0 3% 0;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    opacity: 95%;
+    filter: contrast(110%);
+  }
   .leftside{
+    text-align: center;
     width: 50%;
-  height: 100%;
+  height: 80vh;
   float: left;
   /* border-collapse: collapse; */
   }
 
   .rightside{
+    text-align: center;
     width: 50%;
-    height: 100%;
+    height: 80vh;
     float: right;
+    
+  }
+
+  .contact-form h1{
+    margin-top: 3.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    /* padding: 10%; */
+    width: 85%;
+    height: 85%;
+    margin: 7%;
+  }
+  .contact-form #txt_input:first-child{
+    margin-top: 8%;
+  }
+
+  #txt_input{
+    margin-top: 5%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 8%;
+    width: 80%;
+    padding-left: 5%;
+  }
+
+  #message_area{
+    height: 30%;
+    margin-top: 5%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .btn{
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 10%;
+    background-color: #ffde59;
+    border: none;
+    width: 40%;
+    color: black;
+    /* font-family: alo; */
+    margin-top: 5%;
+  }
+
+  
+  .mum_map{
+    height: 57vh;
+    margin: 3% 0 3% 0;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    opacity: 95%;
+    filter: contrast(110%);
+  }
+  .leftside{
+    text-align: center;
+    width: 50vh;
+  height: 80vh;
+  float: left;
+  /* border-collapse: collapse; */
+  }
+
+  .rightside{
+    text-align: center;
+    width: 50vh;
+    height: 80vh;
+    float: right;
+    
+  }
+  .contact-form h1{
+    margin-top: 5%;
   }
 }
 
@@ -904,8 +1046,6 @@ margin-top: 50px;
   .bgimg{
     position: relative;
   }
-  
-
 
 }
 
