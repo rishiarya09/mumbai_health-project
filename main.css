@@ -1,0 +1,1111 @@
+  /* ///////////////////////////////////////////////////////////// */
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* ///////////////////////////////////////////////////////////// */
+
+/* Common css for all pages starts here */
+  @font-face {
+    font-family: aloja-extended;
+    src: url(font/Aloja-extended.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: aloja-ext;
+    src: url(font/aloja_ext.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: comingsoon;
+    src: url(font/ComingSoon.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: glacial;
+    src: url(font/GlacialIndifference-Regular.otf);
+  }
+
+/* background image for whole page */
+  .square-grid {
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAHlBMVEUAAABkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGSH0mEbAAAACnRSTlMAzDPDPPPYnGMw2CgMzQAAAChJREFUKM9jgAPOAgZMwGIwKkhXQSUY0BCCMxkEYUAsEM4cjI4fwYIAf2QMNbUsZjcAAAAASUVORK5CYII='); */ /* black line */
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAIAAABR6hviAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAITcAACE3ATNYn3oAAAA8SURBVDhPY/hPCNz81ANBUD5eMGocChg1DhegtnFw1VRBg9w4qKdxA7hSKB8vGDUOBYwahwsMZuP+/wcAbmJWHeLYS4gAAAAASUVORK5CYII='); */ /* graph  (greenline)*/
+   /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAIAAABR6hviAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAITcAACE3ATNYn3oAAAA/SURBVDhPY/z//z8DXvDq514IQ4zdGcLAA5igNJXAqHHkgxFlHOPLH3ugTGqAQe7Z0TxLNhg1jnwwmI1jYAAATY4OwbTDhDIAAAAASUVORK5CYII='); graph 1 png (light green line) */
+   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAIAAABR6hviAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAITcAACE3ATNYn3oAAAA6SURBVDhPY/hPBHj5Yw+URQgwMVAVjBpHPhg1jnxAZeMYgRkIyqQKgGY2vGA0z2IFo8aRDwazcQwMAD4+nWmrCvHoAAAAAElFTkSuQmCC');
+   background-size: 25px;
+    /* opacity: 0.5; */
+  }
+/* background image size set */
+html,body{
+  height: 100%;
+
+}
+  .full-size {
+    width: auto;
+    /* height: auto; */
+    height: 100%;
+  }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    font-family: aloja-extended;
+  }
+
+  .glacial{
+    font-family: glacial;
+  }
+
+  .coming-soon{
+    font-family: comingsoon;
+  }
+
+  .aloja{
+    font-family: aloja-ext;
+  }
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************     NAVBAR ENDS HERE   ************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/* navbar for mobile site starts here */
+  /* tried when doing navbar */
+  @media screen and (max-width: 767px){
+  .navbar{
+    font-size: 18PX;
+    background-image: linear-gradient(#ffde59,#ffde59);
+    /* border: 1px solid rgba(0,0,0,0.2); */
+    padding-bottom: 10px;
+   
+  }
+
+  .main-nav.closed{
+    max-height: 500px;
+  }
+
+  .main-nav{
+    list-style-type: none;
+    overflow-y: hidden;
+    max-height: 0px; /* approximate max height */
+    transition-property: all;
+    transition-duration: .5s;
+  list-style-type: none; 
+
+  }
+
+  .nav-links, .logo{
+    text-decoration: none;
+    color: black;
+  }
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo{
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 2px;
+  right:20px;
+  cursor: pointer;
+  color: rgba(5, 5, 5, 0.8);
+  font-size: 24px;
+}
+
+.active{
+  display: block;
+}
+}
+
+/* navbar for mobile sites ends here */
+
+/* navbar for desktop site start here */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 60px;
+      align-items: center;
+      font-size: 18PX;
+      background-image: linear-gradient(#ffde59,#ffde59);
+      /* border: 1px solid rgba(0,0,0,0.2); */
+      padding-bottom: 10px;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  list-style-type: none; 
+
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+
+  .nav-links {
+      margin-left: 40px;
+  }
+
+  .logo {
+      margin-top: 0;
+      margin-left: 20px;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+  .nav-links, .logo{
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
+/* navbar desktop site ends here */
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************     NAVBAR ENDS HERE   ************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/***************     FOOTER  STARTS HERE ************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+/* Footer for mobile version */
+
+.container-footer{
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+li{
+  list-style-type: none;
+}
+.author_name a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.author_name {
+  justify-content: center;
+  color: #ffffff;
+}
+.footer{
+  background-color: #24262b;
+  padding: 30px 0;
+}
+.footer-col{
+  width: 33.3%;
+  padding: 0 15px;
+  color: #ffde59;
+}
+
+.footer-col p{
+  /* font-size: 16px; */
+  color: #bbbbbb;
+
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffde59;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position:relative;
+
+ }
+ .footer-col .contact h4{
+  font-size: 18px;
+  color: #ffde59;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position:relative;
+
+ }
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col .contact a{
+  font-size: 16px;
+  /* text-transform: capitalize; */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col .contact a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+
+}
+
+
+.logo_footer{
+  width: 200px;
+}
+
+#logo_foot{
+  padding-left: 75px;
+  padding-top: 10px;
+}
+
+.footer-col .socials a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+
+}
+
+.footer-col .socials a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.footer-col .contact a{
+  display: block;
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.ico{
+  color: #ffde59;
+}
+
+.logo-text{
+  margin-bottom: 12px;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+ } 
+
+
+
+
+
+
+
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************     FOOTER ENDS HERE   ************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/* Common css for all pages ends here */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* /////////////`*******************************`////////////////// /*/
+/* /////////////`********** INDEX HTML *************`///////////// /*/
+/* /////////////`*******************************`//////////////// /*/
+/* ////////////////////////////////////////////////////////////// */
+
+/* ///////////     index html css starts here      ///////////////////*/
+
+
+/* banner for mobile site start here */
+.banner{
+  content: url(images/banner_mobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  
+}
+
+/* banner for mobile site ends here */
+
+/* banner for desktop site start here */
+@media screen and (min-width: 768px) {
+  .banner{
+    content: url(images/banner-final-1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    
+  }
+}
+
+/* banner for desktop site ends here */
+
+/* operational structure desktop site starts here */
+
+@media screen and (max-width: 767px){
+  /* operational structure  banner starts here  */
+  .opstruct{
+    height: 450px;
+    width: auto;
+    overflow: hidden;
+    background-color: #ffde59;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .op{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 65px;
+  }
+  /* operational sturcture banner ends here */
+
+  /* operational structure concept design starts here */
+  .container-opstruct {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+  }
+  
+  .opstruct_img{
+    content: url(/images/fullimage.png);
+    width: 320px;
+  }
+  .centered-c-text {
+    position: relative;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  .cp{
+    text-align: center;
+    font-family: comingsoon;
+    font-size: 30px;
+  }
+
+  .circle{
+    /* display: none; */
+    position: sticky;
+    width: 300px;
+    height: 300px;
+    margin: 50px 0 0px 50px;
+    /* left: 15%;
+    top: 20%; */
+    /* margin-left: 155px; */
+  }
+
+
+
+
+  .parallax{
+    background-image: url(/images/circle_mobile.png);
+    margin-top: 50px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* operational structure concept design ends here */
+}
+
+
+@media screen and (min-width: 768px) {
+
+  /* operational structure  banner starts here  */
+  .opstruct_img{
+    content: url(/images/fullimage.png);
+  }
+  .opstruct{
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+    background-color: #ffde59;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .op{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 65px;
+  }
+
+  /* operational sturcture banner ends here */
+
+  /* operational structure concept design starts here */
+  .container-opstruct{
+    /* margin-left: 5%;
+    margin-top: 10%; */
+    /* width: 80%; */
+    /* border: 10px solid black; */
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+
+  }
+  .row1{
+    text-align: center;
+    position: relative;
+    /* margin-left: 200px; */
+  }
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .opstruct-topsq{
+    float: left;
+  width: 50%;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  color: black;
+  }
+  .fs-fp{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: comingsoon;
+    color: #1e1e1e;
+  }
+  .fs-sp{
+    text-align: center;
+    font-size: 15px;
+    font-family: comingsoon;
+    line-height: 25px;
+    color: #232324;
+  }
+
+  .circle_div{
+    text-align: center;
+    position: relative;
+  }
+  .circle{
+    /* display: none; */
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    left: 15%;
+    top: 20%;
+    margin-left: 155px;
+  }
+  .centered-op-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered-c-text {
+    position: absolute;
+    top: 41%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+  .cp{
+    text-align: center;
+    font-family: comingsoon;
+    font-size: 20px;
+  }
+  
+  /* operational structure concept design ends here */
+
+}
+
+/* operational structure desktop site ends here */
+
+/* ///////////     index html css ends here      ///////////////////*/
+
+/* ///////////////////////////////////////////////////////////// */
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* /////////////`*******************************`//////////// /*/
+/* ///////////////////////////////////////////////////////////// */
+
+
+/* About us page starts here */
+/* universal */
+.container{
+  height: auto;
+  width: 100%;
+}
+.leftpane{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+  /* position: relative; */
+}
+.rightpane{
+  margin-top: 70px;
+  /* position: relative; */
+  top:50px;
+  
+}
+
+.toppane{
+  width: 100%;
+  height: 5px;
+  border-collapse: collapse;
+}
+
+.wwa{
+  padding: 16px 10px 16px 0px;
+}
+
+.om{
+  padding: 16px 10px 16px 0px;
+
+}
+/* mobile version ends */
+
+
+@media screen and (max-width: 767px){
+ .horizontal-bar{
+  width: 55px;
+  height: 600px;
+  position: inherit;
+  top: 15%;
+  bottom: 0;
+  border: 10px solid black;
+  border-left: none;
+  margin: 50px 0px 20px 0px;
+ }
+ .strike{
+   font-size: 50px;
+  position: relative;
+  z-index: 1;
+  padding-left: 70px;
+  /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+}
+
+.strike:before {
+  border-top: 35px solid #ffde59;
+  content:"";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 60%; left: 0; right: 0; bottom: 0;
+  width: auto;
+  z-index: -1;
+}
+
+.para1{
+  margin: 35px 0px 30px 70px; 
+}
+
+.para{
+  margin: 0px 0px 25px 70px; 
+}
+
+.small_head{
+  font-size: 30px;
+}
+
+.small_para{
+  font-size: 25px;
+}
+
+}
+
+/* mobile view css ends*/
+
+/* desktop version  */
+
+@media screen and (min-width: 768px) {
+  .horizontal-bar{
+    width:7%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 10px solid black;
+    border-left: none;
+    margin-top: 150px;;
+  
+  }
+
+  .strike{
+    position: relative;
+    z-index: 1;
+    padding-left: 150px;
+    font-size: 50px;
+    /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+  }
+  
+  .strike:before {
+    border-top: 50px solid #ffde59;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 55%; left: 0; right: 0; bottom: 0;
+    width: auto;
+    z-index: -1;
+  }
+
+  .para1{
+  margin: 35px 0px 30px 150px; 
+
+  }
+
+  .para{
+    margin: 0px 0px 30px 150px; 
+  }
+
+  .small_head{
+    font-size: 30px;
+  }
+  
+  .small_para{
+    font-size: 25px;
+  }
+}
+
+/* desktop version ends */
+/* //////////////////////////////////////////////////////////////////// */
+/* /////////////`****************************************`////////////// /*/
+/* /////////////`************* support US HTML ***********`///////////// /*/
+/* /////////////`****************************************`///////////// /*/
+/* /////////////////////////////////////////////////////////////////// */
+
+/* @media screen and (min-width: 768px){
+
+  .black_strike{
+    margin-top: 50px;
+      font-size: 50px;
+     position: relative;
+     z-index: 1;
+     text-align: center;
+     color: #ffde59;
+     /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+    /* }
+    
+    .black_strike:before {
+     border-top: 100px solid black;
+     content:"";
+     margin: 0 auto; /* this centers the line to the full width specified */
+     /* position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+     /* top: 0; left: 0; right: 0; bottom: 0;
+     width: auto;
+     z-index: -1;
+    /* }
+
+}  */
+
+.black_strike{
+margin-top: 50px;
+      font-size: 50px;
+     position: relative;
+     z-index: 1;
+     text-align: center;
+     color: #ffde59;
+     /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+    }
+    
+    .black_strike:before {
+     border-top: 100px solid black;
+     content:"";
+     margin: 0 auto; /* this centers the line to the full width specified */
+     position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+     top: 0; left: 0; right: 0; bottom: 0;
+     width: auto;
+     z-index: -1;
+    }
+
+    .gap_strike{
+      margin-top: 50px;
+            font-size: 50px;
+           position: relative;
+           z-index: 1;
+           text-align: center;
+           color: #ffde59;
+           /* border: none; margin-top: 30px; background-color: #ffde59; width: auto; height: 35px; position:relative; top: 50%; */
+          }
+          
+          .gap_strike:before {
+           border-top: 100px solid black;
+           content:"";
+           margin: 0 auto; /* this centers the line to the full width specified */
+           position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+           top: 0; left: 0; right: 0; bottom: 0;
+           width: auto;
+           z-index: -1;
+          }
+
+    .sup_p{
+      padding: 50px;
+      font-size: 30px;
+    }
+
+    .b_text{
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      padding: 20px;
+  
+      }
+
+@media screen and (max-width: 767px){
+  .black_strike{
+      font-size: 40px;
+     }
+    
+    .gap_strike:before {
+      border-top: 170px solid black;
+     top: -8px;
+    }
+
+    .gap_strike{
+      font-size: 40px;
+     }
+    
+    .black_strike:before {
+     top: -8px;
+    }
+
+    .sup_p{
+      font-size: 20px;
+    }
+
+    .b_text{
+      
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+
+    }
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////// */
+/* /////////////`****************************************`////////////// /*/
+/* /////////////`************* support US HTML  ends here***********`///////////// /*/
+/* /////////////`****************************************`///////////// /*/
+/* /////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////// */
+/* /////////////`****************************************`////////////// /*/
+/* /////////////`************* CONTACT US HTML ***********`///////////// /*/
+/* /////////////`****************************************`///////////// /*/
+/* /////////////////////////////////////////////////////////////////// */
+
+/* contact us page css starts here */
+
+@media screen and (min-width: 768px){
+  
+  .contact-form{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    /* padding: 10%; */
+    width: 90%;
+    height: 85%;
+    margin: 4%;
+  }
+  .contact-form #txt_input:first-child{
+    margin-top: 8%;
+  }
+
+  #txt_input{
+    margin-top: 4%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 8%;
+    width: 80%;
+    padding-left: 5%;
+  }
+
+  #message_area{
+    height: 30%;
+    margin-top: 4%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .btn{
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0%;
+    height: 8%;
+    background-color: #ffde59;
+    border: none;
+    width: 30%;
+    color: black;
+    /* font-family: alo; */
+    margin-top: 2%;
+  }
+
+  
+  .mum_map{
+    height: 92%;
+    margin: 3% 0 3% 0;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    opacity: 95%;
+    filter: contrast(110%);
+  }
+  .leftside{
+    text-align: center;
+    width: 50%;
+  height: 80vh;
+  float: left;
+  /* border-collapse: collapse; */
+  }
+
+  .rightside{
+    text-align: center;
+    width: 50%;
+    height: 80vh;
+    float: right;
+    
+  }
+
+  .contact-form h1{
+    margin-top: 3.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    /* padding: 10%; */
+    width: 85%;
+    height: 85%;
+    margin: 7%;
+  }
+  .contact-form #txt_input:first-child{
+    margin-top: 8%;
+  }
+
+  #txt_input{
+    margin-top: 5%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 8%;
+    width: 80%;
+    padding-left: 5%;
+  }
+
+  #message_area{
+    height: 30%;
+    margin-top: 5%;
+    background-color: #ecf0f3;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .btn{
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 10%;
+    background-color: #ffde59;
+    border: none;
+    width: 40%;
+    color: black;
+    /* font-family: alo; */
+    margin-top: 5%;
+  }
+
+  
+  .mum_map{
+    height: 57vh;
+    margin: 3% 0 3% 0;
+    box-shadow: 10px 10px 10px #59595a, -10px -10px 10px #8f8e8e;
+    opacity: 95%;
+    filter: contrast(110%);
+  }
+  .leftside{
+    text-align: center;
+    width: 50vh;
+  height: 80vh;
+  float: left;
+  /* border-collapse: collapse; */
+  }
+
+  .rightside{
+    text-align: center;
+    width: 50vh;
+    height: 80vh;
+    float: right;
+    
+  }
+  .contact-form h1{
+    margin-top: 5%;
+  }
+}
+
+
+
+
+
+/* contact us page css ends here */
+
+/* what are we working towards page css start here */
+@media screen and (min-width: 768px) {
+  .heading{
+    padding-left: 40px;
+    font-size: 50px;
+  }
+
+  .p1{
+    margin: 35px 0px 30px 45px; 
+    font-size: 25px;
+    }
+
+    .pa{
+      margin: 0px 0px 25px 45px; 
+    font-size: 25px;
+
+    }
+  
+  .bimg{
+    /* position: relative; */
+    width: 50%;
+    height: auto;
+  }
+  
+
+  .leftp{
+    flex: 1;
+    margin-top: 30px;
+    width: 60%;
+    height: auto;
+  }
+
+  .rightp{
+    flex: 1;
+    margin-top: 30px;
+    width: 40%;
+    height: 100%;
+  }
+
+  .bgimg{
+    position: relative;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .heading{
+    padding-left: 40px;
+    font-size: 25px;
+
+  }
+
+  .p1{
+    margin: 35px 0px 30px 45px; 
+    font-size: 16px;
+    }
+  
+  .pa{
+      margin: 0px 0px 25px 45px; 
+    font-size: 16px;
+
+    }
+
+    .bimg{
+      /* position: relative; */
+      width: 100%;
+      height: auto;
+    }
+
+    .leftp{
+      flex: 1;
+      margin-top: 30px;
+      width: 60%;
+      height: auto;
+    }
+
+    .leftp{
+      flex: 1;
+      margin-top: 30px;
+      /* width: 60%; */
+      height: auto;
+    }
+  
+    .rightp{
+      flex: 1;
+      margin-top: 50px;
+      /* width: 40%; */
+      height: 100%;
+    }
+  
+    .bgimg{
+      position: relative;
+    }
+}
+
+/* what are we working towards page css ends here */
+
+
