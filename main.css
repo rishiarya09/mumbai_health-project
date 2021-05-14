@@ -75,111 +75,109 @@ html,body{
 /***************************************************************/
 /***************************************************************/
 
-/* navbar for mobile site starts here */
-  /* tried when doing navbar */
-  @media screen and (max-width: 767px){
-  .navbar{
-    font-size: 18PX;
-    background-image: linear-gradient(#ffde59,#ffde59);
-    /* border: 1px solid rgba(0,0,0,0.2); */
-    padding-bottom: 10px;
-   
-  }
-
-  .main-nav.closed{
-    max-height: 500px;
-  }
-
-  .main-nav{
-    list-style-type: none;
-    overflow-y: hidden;
-    max-height: 0px; /* approximate max height */
-    transition-property: all;
-    transition-duration: .5s;
-  list-style-type: none; 
-
-  }
-
-  .nav-links, .logo{
-    text-decoration: none;
-    color: black;
-  }
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.logo{
-  display: inline-block;
-  font-size: 18px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 2px;
-  right:20px;
-  cursor: pointer;
-  color: rgba(5, 5, 5, 0.8);
-  font-size: 24px;
-}
-
-.active{
+/* universal */
+.brand {
   display: block;
-}
-}
+  font-weight: bold;
+  font-size: 20px; }
+  .site-header {
+  position: relative;
+  background-color: white; }
+  .site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  
+.nav__item a {
+  display: block;
+  padding: 1rem; }
 
+.nav__toggle {
+  display: none; }
+  nav button{
+    border: 1px solid #d9f0f7;
+  }
+
+  .wrapper{
+
+  }
+
+/* navbar for mobile site starts here */
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .site-header__wrapper a{
+      margin-left: 10px;
+    }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+
+  @media (max-width: 599px) {
+      .site-header__wrapper img{
+          display: none;
+      }
+    .nav__toggle {
+        margin-top: 20px;
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+ 
 /* navbar for mobile sites ends here */
 
 /* navbar for desktop site start here */
 
-@media screen and (min-width: 768px) {
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 60px;
-      align-items: center;
-      font-size: 18PX;
-      background-image: linear-gradient(#ffde59,#ffde59);
-      /* border: 1px solid rgba(0,0,0,0.2); */
-      padding-bottom: 10px;
+@media (min-width: 600px) {
+  /* .nav__item:not(:last-child){
+    margin-right: 1rem;
   }
-
-  .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-  list-style-type: none; 
+  .nav__item:not(:first-child){
+    margin-left: 1rem;
+  } */
+  .nav{
+    margin-top: 8px;
+  }
+  .nav__item{
+    margin-left: 1rem;
+    margin-right: 1rem;
 
   }
-
-  .main-nav li {
-      margin: 0;
+  .line_ver{
+    border-left: 3px solid #222;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 10px;
   }
-
-  .nav-links {
-      margin-left: 40px;
+  .nav__item:after {
+    content: " ";
+    position: absolute;
+    border-left: 1px #6c757d solid;
+    top: 35%;
+    right: 0;
+    height: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
+  .brand {
+    margin-bottom: 1rem; } }
 
-  .logo {
-      margin-top: 0;
-      margin-left: 20px;
-  }
 
-  .navbar-toggle {
-      display: none;
-  }
-
-  .nav-links, .logo{
-    text-decoration: none;
-    color: black;
-  }
-
-}
+@media (min-width: 600px) {
+  .site-header__wrapper {
+    text-align: center; } }
+@media (min-width: 600px) {
+.nav__wrapper {
+  display: inline-flex; } }
 
 /* navbar desktop site ends here */
 
