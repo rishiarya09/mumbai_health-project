@@ -10,107 +10,55 @@
        <link rel="stylesheet" href="main.css">
        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-        <style>
-            /* 
-** The Header Media Queries **
-** Tweak as per your needs **
-*/
-
-/* desktop */
-
-  /* mobile */
-
-/* style css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-/* .wrapper {
-  max-width: 1140px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-ol, ul, a {
-  color: #222;
-    text-decoration: none;
-    list-style: none;
-}
-
-        </style>
     </head>
     <body class="square-grid full-size">
+      <!-- Header starts -->
         <header class="site-header bg-white">
             <div class="wrapper site-header__wrapper">
-              <img class =" brand"src="images\logo_V1.jpg" style="width: 50px; margin: auto; margin-bottom: 2px;">
-              <a href="#" style="margin-bottom: 0rem;" class="brand">MUMBAI HEALTH PROJECT FOUNDATION</a>
+              <img class =" brand"src="images\logo_V1.jpg" style="width: 60px; margin: auto; margin-bottom: 2px;">
+              <a href="/index.html" style="margin-bottom: 0rem;" class="brand">MUMBAI HEALTH PROJECT FOUNDATION</a>
               <nav class="nav">
                 <button class="nav__toggle" aria-expanded="false" type="button">
                   <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav__wrapper">
-                  <li class="nav__item"><a href="#">Home</a></li>
+                  <li class="nav__item"><a href="/about_us.html">Soch</a></li>
                   <!-- <li class="line_ver"></li> -->
-                  <li class="nav__item"><a href="#">About</a></li>
+                  <li class="nav__item"><a href="/seekh.html">Seekh</a></li>
                   <!-- <li class="line_ver"></li> -->
-                  <li class="nav__item"><a href="#">Services</a></li>
+                  <li class="nav__item"><a href="/samaaj.html">Samaaj</a></li>
                   <!-- <li class="line_ver"></li> -->
-                  <li class="nav__item"><a href="#">Hire us</a></li>
+                  <li class="nav__item"><a href="/support_us.html">Support</a></li>
                   <!-- <li class="line_ver"></li> -->
-                  <li class="nav__item"><a href="#">Contact</a></li>
+                  <li class="nav__item"><a href="/contact_us.html">Contact Us</a></li>
                 </ul>
               </nav>
             </div>
           </header>
-           <!-- banner mhp -->
-        <div class="banner" >
-        </div>
-        <!-- mhp banner ends -->
-        <!-- operationa structure starts here -->
-        <div class="opstruct">
-            <p class="op">Our Operational Structure</p>
-         </div>
-         <!-- operational structure design concept starts here -->
-         <!-- operational structure concept design desktop version -->
-         <div class="container-opstruct"> 
-            <div class="opstruct_img">
+       <!--Header Ends Here  -->
 
-            </div>
-         </div>
-    <!-- operational structure concept design desktop version ends here -->
+          <!-- banner mhp -->
+             <div class="banner" >
+             </div>
+
     <footer class="footer">
         <div class="container-footer">
             <div class="row">
                 <div class="footer-col">
                     <h2 class="logo-text">Mumbai Health Project</h2>
-                    <h3>Address: 1</h3>
                     <p>Fl.No.E3-1112 IVY APARTMENTS, GAT NO 690 TO 710</p>
-                    <p>PUNE, MAHARASTRA, INDIA - 412207</p>
-                    <h3>Address: 2</h3>
-                    <p>303 A wing cosmic Heights Bhakti park</p>
-                    <p>WADALA, Mumbai 400037</p>
+                        <p>PUNE, MAHARASTRA, INDIA - 412207</p>
                 </div>
                 <div class="footer-col" id="logo_foot">
-                    <img src="/images/logo.jpg" alt="logo" class="logo_footer"/>
+                  <div class="socials">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class=" fab fa-facebook"></i></a>
+                    <a href="#"><i class=" fab fa-instagram"></i></a>
+                    <a href="#"><i class=" fab fa-twitter"></i></a>
+                    <a href="#"><i class=" fab fa-youtube"></i></a>
+                </div>
                 </div>
                 <div class="footer-col">
-                    <div class="socials">
-                        <h4>Follow Us</h4>
-                        <a href="#"><i class=" fab fa-facebook"></i></a>
-                        <a href="#"><i class=" fab fa-instagram"></i></a>
-                        <a href="#"><i class=" fab fa-twitter"></i></a>
-                        <a href="#"><i class=" fab fa-youtube"></i></a>
-                    </div>
                     <div class="contact">
                         <h4>Contact us</h4>
                         <a href="tel:+91-9769949470"><i class="ico fa fa-phone"></i> &nbsp; +91-9769949470</a>
@@ -125,22 +73,6 @@ ol, ul, a {
             </div>
         </div>
     </footer>
-<script>
-    let navToggle = document.querySelector(".nav__toggle");
-let navWrapper = document.querySelector(".nav__wrapper");
-
-navToggle.addEventListener("click", function () {
-  if (navWrapper.classList.contains("active")) {
-    this.setAttribute("aria-expanded", "false");
-    this.setAttribute("aria-label", "menu");
-    navWrapper.classList.remove("active");
-  } else {
-    navWrapper.classList.add("active");
-    this.setAttribute("aria-label", "close menu");
-    this.setAttribute("aria-expanded", "true");
-  }
-});
-</script>
-
+    <script src="/main.js"></script>
 </body>
 </html>

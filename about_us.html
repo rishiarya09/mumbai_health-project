@@ -12,79 +12,51 @@
 
     </head>
     <body class="square-grid full-size">
-        <nav class="navbar"  id="slider">
-            <span class="navbar-toggle" onclick="navbarToggle()" id="js-navbar-toggle">
-                <i class="fa fa-bars"></i>
-            </span>
-            <a href="/index.html" class="logo">Mumbai Health Project</a>
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="/about_us.html" class="nav-links">About Us</a>
-                </li>
-                <li>
-                    <a href="/support_us.html" class="nav-links">Support Us</a>
-                </li>
-                <li>
-                    <a href="/what_are_we_working_together.html" class="nav-links">What Do We Do</a>
-                </li>
-                <li>
-                    <a href="/contact_us.html" class="nav-links">Contact Us</a>
-                </li>
-
-            </ul>
-        </nav>
+        <!-- Header starts -->
+        <header class="site-header bg-white">
+            <div class="wrapper site-header__wrapper">
+              <img class =" brand"src="images\logo_V1.jpg" style="width: 60px; margin: auto; margin-bottom: 2px;">
+              <a href="/index.html" style="margin-bottom: 0rem;" class="brand">MUMBAI HEALTH PROJECT FOUNDATION</a>
+              <nav class="nav">
+                <button class="nav__toggle" aria-expanded="false" type="button">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav__wrapper">
+                  <li class="nav__item"><a href="/about_us.html">Soch</a></li>
+                  <!-- <li class="line_ver"></li> -->
+                  <li class="nav__item"><a href="/seekh.html">Seekh</a></li>
+                  <!-- <li class="line_ver"></li> -->
+                  <li class="nav__item"><a href="/samaaj.html">Samaaj</a></li>
+                  <!-- <li class="line_ver"></li> -->
+                  <li class="nav__item"><a href="/support_us.html">Support</a></li>
+                  <!-- <li class="line_ver"></li> -->
+                  <li class="nav__item"><a href="/contact_us.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+       <!--Header Ends Here  -->
             <!-- About us starts here -->
-                <div class="container" style="margin-bottom: 25px;">
-                    <div class="toppane">
-                    </div>
-                    <div class="leftpane horizontal-bar">
-                    </div>
-                    <div class="rightpane ">
-                        <h1 class="strike">About Us</h1>
-                        <div class="para1">
-                            <P >WHO WE ARE</P>
-                            <p class="wwa glacial ">A small team of healthcare professionals who are attached to the city and tied together with a common goal : Take the healthcare professionals to every gully of the city </p>
-                        </div>
-                        <div class="para">
-                            <p>OUR MISSION</p>
-                            <P class="om glacial ">To revisit the "family doctor" concept and present it as an enabler to the government's efforts to improve healthcare services with a focus on low income inhabitations  </P>
-                        </div>
-                        <div class="para">
-                            <p>OUR VISION</p>
-                            <p class="ov glacial ">Universal healthcare becomes a dream within reach alongside a strong arm of behavioural change towards community health.</p>
-                        </div>
-                        <!-- <div>
-                        </div> -->
-                        <!-- <img src="/images/darwing_mobile.jpg" style="margin-left: 8%;" alt="drawing"/> -->
-                    </div>
-                </div>
             <!-- About us ends here -->
-            <!-- Footer  -->
-            
-
+            <!-- Footer  starts here -->
             <footer class="footer">
                 <div class="container-footer">
                     <div class="row">
                         <div class="footer-col">
                             <h2 class="logo-text">Mumbai Health Project</h2>
-                            <h3>Address: 1</h3>
-                            <p>Fl.No.E3-1112 IVY APARTMENTS, GAT NO 690 TO 710</p>
-                            <p>PUNE, MAHARASTRA, INDIA - 412207</p>
-                            <h3>Address: 2</h3>
                             <p>303 A wing cosmic Heights Bhakti park</p>
                             <p>WADALA, Mumbai 400037</p>
                         </div>
                         <div class="footer-col" id="logo_foot">
-                            <img src="/images/logo.jpg" alt="logo" class="logo_footer"/>
+                          <div class="socials">
+                            <h4>Follow Us</h4>
+                            <a href="#"><i class=" fab fa-facebook"></i></a>
+                            <a href="#"><i class=" fab fa-instagram"></i></a>
+                            <a href="#"><i class=" fab fa-twitter"></i></a>
+                            <a href="#"><i class=" fab fa-youtube"></i></a>
+                        </div>
                         </div>
                         <div class="footer-col">
-                            <div class="socials">
-                                <h4>Follow Us</h4>
-                                <a href="#"><i class=" fab fa-facebook"></i></a>
-                                <a href="#"><i class=" fab fa-instagram"></i></a>
-                                <a href="#"><i class=" fab fa-twitter"></i></a>
-                                <a href="#"><i class=" fab fa-youtube"></i></a>
-                            </div>
                             <div class="contact">
                                 <h4>Contact us</h4>
                                 <a href="tel:+91-9769949470"><i class="ico fa fa-phone"></i> &nbsp; +91-9769949470</a>
@@ -99,16 +71,9 @@
                     </div>
                 </div>
             </footer>
+            <!-- Footer ends here -->
 
-
-
-
-
-
-
-        
-
-        <script type="text/javascript" src="main.js" ></script>
+            <script src="/main.js"></script>
 
     </body>
 </html>
