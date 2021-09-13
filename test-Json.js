@@ -93,7 +93,7 @@ var json = `{
         {
           "name": "Abhi Saxena",
           "Qualification": "",
-          "Picture": "https://ibb.co/jbXSxJz",
+          "Picture": "https://i.ibb.co/PFHdbDM/Abhi-Saxena.jpg",
           "Linkedin": "https://www.linkedin.com/in/abhi-saxena-722b0b142/"
         },
         {
@@ -105,7 +105,7 @@ var json = `{
         {
           "name": "Rishi Arya Juturu",
           "Qualification": "M.Eng Internetworking",
-          "Picture": "https://ibb.co/JvCm5wB",
+          "Picture": "https://i.ibb.co/StJ5R4s/Rishi-Arya-Juturu.jpg",
           "Linkedin": "https://www.linkedin.com/in/jutururishiarya/"
         },
         {
@@ -125,7 +125,7 @@ var json = `{
         {
           "name": "Vaishnavi Kanuganti",
           "Qualification": "",
-          "Picture": "https://ibb.co/MZsGmQP",
+          "Picture": "https://i.ibb.co/6rm1kLD/Vaishnavi.jpg",
           "Linkedin": "https://www.linkedin.com/in/vaishnavikanuganti"
         },
         {
@@ -139,7 +139,7 @@ var json = `{
         {
           "name": "Dr Rashika Anand",
           "Qualification": "",
-          "Picture": "yes",
+          "Picture": "",
           "Linkedin": "https://www.linkedin.com/in/rashika-anand-777853154/"
         },
         {
@@ -170,35 +170,67 @@ var json = `{
        }`;
 
 // Converting JSON object to JS object
+
 var obj = JSON.parse(json);
 
-// Defining recursive function to print nested values
-function printValues(obj) {
-  for (var k in obj) {
-    if (obj[k] instanceof Object) {
-      printValues(obj[k]);
+var main_div = document.getElementsByClassName("team_listing")[0];
+for (var key in obj) {
+  var div = document.createElement("div");
+  div.className = "departmentName";
+  div.id = "departmentName";
+  var dept_name = document.createElement("p");
+  dept_name.innerHTML = key;
+  dept_name.className = "heading__4";
+  let hr = document.createElement("hr");
+  hr.className = "line";
+  var row_div = document.createElement("div");
+  row_div.className = "row";
+  for (key1 in obj[key]) {
+    var our_team = document.createElement("div");
+    our_team.className = "our-team";
+    // div picture in card
+    var div_pic = document.createElement("div");
+    div_pic.className = "picture";
+    var div_pic_img = document.createElement("IMG");
+    div_pic_img.className = "img-fluid";
+    if (obj[key][key1]["Picture"].length != 0) {
+      div_pic_img.setAttribute("src", obj[key][key1].Picture);
+      div_pic_img.setAttribute("alt", obj[key][key1].name);
     } else {
-      document.write(obj[k] + "<br>");
+      div_pic_img.setAttribute("src", "./images/dummy-image.jpg");
+      div_pic_img.setAttribute("alt", obj[key][key1].name);
     }
+
+    // memeber information in "team-contnet"
+    var team_content = document.createElement("div");
+    team_content.className = "team-content";
+    const name = document.createElement("H2");
+    name.className = "name";
+    name.innerHTML = obj[key][key1]["name"];
+    const qualification = document.createElement("H4");
+    qualification.className = "title";
+    if (obj[key][key1]["Qualification"].length != 0) {
+      qualification.innerHTML = obj[key][key1]["Qualification"];
+    }
+    team_content.append(name, qualification);
+    const ul = document.createElement("UL");
+    ul.className = "social";
+    const li = document.createElement("LI");
+    if (obj[key][key1]["Linkedin"].length != 0) {
+      const a = document.createElement("a");
+      a.setAttribute("href", obj[key][key1]["Linkedin"]);
+      a.setAttribute("class", "fab fa-linkedin");
+      a.setAttribute("aria-hidden", "true");
+      a.setAttribute("target", "_blank");
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+
+    div_pic.appendChild(div_pic_img);
+    our_team.append(div_pic, team_content, ul);
+    our_team.classList.add("our-team");
+    row_div.appendChild(our_team);
+    div.append(dept_name, hr, row_div);
   }
+  main_div.append(div);
 }
-
-// Printing all the values from the resulting object
-// printValues(obj);
-
-var img = document.createElement("img");
-img.setAttribute("height", "300");
-img.setAttribute("width", "250");
-
-document.getElementById("div-demo").innerHTML = obj["Advisory Team"][0]["name"];
-document.getElementById("div-demo1").innerHTML = obj["Advisory Team"][0]["Qualification"];
-img.src = obj["Advisory Team"][0]["Picture"];
-document.getElementById("div-demo3").innerHTML = obj["Advisory Team"][0]["Linkedin"];
-
-document.getElementById("div-demo2").appendChild(img);
-
-document.getElementById("demo").innerHTML = obj["Advisory Team"][1]["name"];
-document.getElementById("demo1").innerHTML = obj["Advisory Team"][1]["Qualification"];
-document.getElementById("demo2").innerHTML = obj["Advisory Team"][1]["Picture"];
-document.getElementById("demo3").innerHTML = obj["Advisory Team"][1]["Linkedin"];
-
