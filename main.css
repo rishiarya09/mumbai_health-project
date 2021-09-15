@@ -1202,6 +1202,29 @@ li {
   letter-spacing: 24px;
 }
 
+/* @media (min-width: 1900px) {
+  .taximeter {
+    height: 40rem;
+  }
+} */
+
+@media (min-width: 1490px) {
+  .taximeter {
+    height: 34.8rem;
+  }
+
+  .numbers .value {
+    top: 550%;
+  }
+}
+
+@media (min-width: 1460px) {
+  .taximeter {
+    min-height: 546px;
+    width: 48%;
+  }
+}
+
 @media (max-width: 1199px) {
   .taximeter {
     width: 40%;
