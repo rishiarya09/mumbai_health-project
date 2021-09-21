@@ -16,8 +16,10 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+
+    <script src="https://cdnjs.com/libraries/pdf.js"></script>
   </head>
-  <body class="square-grid full-size">
+  <body class="square-grid full-size" oncontextmenu="return false">
     <!-- Header starts -->
     <header class="site-header bg-white">
       <div class="wrapper site-header__wrapper">
@@ -34,20 +36,50 @@
             <i class="fas fa-bars"></i>
           </button>
           <ul class="nav__wrapper">
-            <li class="nav__item"><a href="/about_us.html">Soch</a></li>
+            <li class="nav__item"><a href="./about_us.html">Soch</a></li>
             <!-- <li class="line_ver"></li> -->
-            <li class="nav__item"><a href="/seekh.html">Seekh</a></li>
+            <li class="nav__item"><a href="./seekh.html">Seekh</a></li>
             <!-- <li class="line_ver"></li> -->
-            <li class="nav__item"><a href="/samaaj.html">Samaaj</a></li>
+            <!-- <li class="nav__item"><a href="./samaaj.html">Samaaj</a></li> -->
             <!-- <li class="line_ver"></li> -->
-            <li class="nav__item"><a href="/support_us.html">Support</a></li>
+            <!-- <li class="nav__item"><a href="/support_us.html">Support</a></li> -->
             <!-- <li class="line_ver"></li> -->
-            <li class="nav__item"><a href="/contact_us.html">Contact Us</a></li>
+            <li class="nav__item">
+              <a href="./contact_us.html">Contact Us</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <!--Header Ends Here  -->
+
+    <!-- Page Content Starts Here -->
+
+    <div class="container___div">
+      <img
+        src="./images/26fcf3a0-e665-47e5-8824-4eaddbd96a94.jpg"
+        alt="Banner image"
+        class="bannerImg"
+      />
+    </div>
+
+    <div class="container___div-1">
+      <div class="tab active" id="tab">CC Gully Clinic</div>
+      <!-- <div class="tab" id="tab">Second Project</div>
+      <div class="tab" id="tab">Third Project</div>
+      <div class="tab" id="tab">Fourth Project</div>
+      <div class="tab" id="tab">Fifth Project</div> -->
+    </div>
+
+    <div class="container___div-2">
+      <iframe
+        src="http://www.africau.edu/images/default/sample.pdf"
+        id="pdf-js-viewer"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <!-- Page Content Ends Here -->
 
     <!-- Footer  starts here -->
     <footer class="footer">
@@ -93,6 +125,10 @@
           <div>
             <span style="font-size: 10px"
               >&#169; Developed by
+              <a href="https://github.com/bhavi140201" target="_blank">
+                Bhavjot Singh</a
+              >
+              &
               <a href="https://github.com/rishiarya09"
                 >Rishi Arya Juturu</a
               ></span
