@@ -59,7 +59,7 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
           <!-- <li class="nav__item"><a href="./support_us.html">Support</a></li> -->
           <!-- <li class="line_ver"></li> -->
           <li class="nav__item">
-            <a href="./contact_us.html">Contact Us</a>
+            <a href="./contact_us.php">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -77,6 +77,8 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
     ?>
 
       <h2 style="text-align: center;">Thanks, We will get in touch very soon</h2>
+
+      <!-- I have not done the modal now after two days that will be also completed -->
 
     <?php
     } else {
