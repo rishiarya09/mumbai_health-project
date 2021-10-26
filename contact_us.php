@@ -1,3 +1,34 @@
+<?php
+
+$message_sent = false;
+ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+if (isset($_POST['mail']) && $_POST['mail'] != '') {
+
+  if (filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
+
+    $userName = $_POST['name'];
+    $userEmail = "support@mumbaihealthproject.com";
+    $messageSubject = $_POST['subject'];
+    $message = $_POST['message'];
+    
+    $to = "mumbaihealthproject@gmail.com";         // Change the "To" mail id 
+    $body = "";
+
+    $body .= "From: " . $userName . "\r\n";
+    $body .= "Email: " . $userEmail . "\r\n";
+    $body .= "Message: " . $message . "\r\n";
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    mail($to, $messageSubject, $body, $headers);
+
+    $message_sent = true;
+  }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -33,16 +64,33 @@
                     <!-- <li class="nav__item"><a href="./support_us.html">Support</a></li> -->
                     <!-- <li class="line_ver"></li> -->
                     <li class="nav__item">
-                        <a href="./contact_us.html">Contact Us</a>
+                        <a href="./contact_us.php">Contact Us</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--Header Ends Here  -->
+
     <div class="container" style="display: flex; flex-wrap: wrap">
+
+
+        <?php
+    if ($message_sent) {
+
+
+    ?>
+
+        <h2 style="text-align: center;">Thanks, We will get in touch very soon</h2>
+
+        <!-- I have not done the modal now after two days that will be also completed -->
+
+        <?php
+    } else {
+    ?>
+
         <div class="leftside">
-            <form class="contact-form" action="contactform.php" method="post">
+            <form class="contact-form" action="contact_us.php" method="post">
                 <h1 class="c_us">Contact Us</h1>
                 <input type="text" id="txt_input" name="name" placeholder="Full name" />
                 <br />
@@ -53,9 +101,15 @@
                 <button type="submit" class="btn" name="submit">Send E-mail</button>
             </form>
         </div>
-        <div class="rightside">
-            <img src="images/mumbai_map.jpg" alt="mumbai_map" class="mum_map" />
-        </div>
+
+        <?php
+    };
+    ?>
+
+
+        <!-- <div class="rightside">
+      <img src="images/mumbai_map.jpg" alt="mumbai_map" class="mum_map" />
+    </div> -->
     </div>
 
     <!-- Footer  starts here -->
@@ -90,7 +144,7 @@
             <div class="row author_name">
                 <div>
                     <span style="font-size: 10px">&#169; Developed by
-                        <a href="https://github.com/bhavi140201" target="_blank">
+                        <a href="https://www.linkedin.com/in/bhavjot-singh/" target="_blank">
                             Bhavjot Singh</a>
                         &
                         <a href="https://github.com/rishiarya09">Rishi Arya Juturu</a></span>
