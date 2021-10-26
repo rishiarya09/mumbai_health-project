@@ -18,14 +18,16 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
     <title>Message From Contact Us page</title>
     </head>
     <body>
-    <h2>From: "+ $userName +"</h2>
-    <p>Email: "+ $userEmail +"</p>
-    <p>"+ $message +"</p>
+    <h2>From: ". $userName ."</h2>
+    <p>Email: ". $userEmail ."</p>
+    <p>". $message ."</p>
     </body>
     </html>";
+    $from ="support@mumbaihealthproject.com";
     
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "From:" .$from;
     mail($to, $messageSubject, $body, $headers);
 
     $message_sent = true;
