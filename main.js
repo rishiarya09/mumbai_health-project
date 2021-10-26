@@ -37,25 +37,25 @@ var json = `{
           {
             "name": "Dr. Malvika Neeraj",
             "Qualification": "MBBS | MBA(Pharmaceutical Management)",
-            "Picture": "https://i.ibb.co/Y3N13bq/Dr-Malvika-Neeraj.jpg",
+            "Picture": "https://i.ibb.co/sVx5n9F/malvika.jpg",
             "Linkedin": "https://www.linkedin.com/in/dr-malvika-neeraj-671967b9/"
           },
           {
             "name": "Dr.Harshvardhan Bansode",
             "Qualification": "MBBS | AFIH",
-            "Picture": "https://i.ibb.co/P4G2rmy/Dr-Harshvardhan-Bansode.jpg",
+            "Picture": "https://i.ibb.co/1LGHj5K/Harsh.jpg",
             "Linkedin": "https://www.linkedin.com/in/harshvardhan-bansode-1bb731111/"
           },
           {
             "name": "Dr. Vivek Waghela",
             "Qualification": "MBBS | MD(Medicine)",
-            "Picture": "https://i.ibb.co/RQ5kQ74/Dr-Vivek-Waghela.jpg",
+            "Picture": "https://i.ibb.co/6WJphLj/Dr-Vivek-Waghela.jpg",
             "Linkedin": "https://www.linkedin.com/in/vivek-waghela-a45ab388/"
           },
           {
             "name": "Dr. Dipika Shah",
             "Qualification": "MBBS | MD",
-            "Picture": "https://i.ibb.co/XjP27vq/Dr-Dipika-Shah.jpg",
+            "Picture": "https://i.ibb.co/r5x0zLL/dr-dipika.jpg",
             "Linkedin": "link"
           }
         ],
@@ -125,7 +125,7 @@ var json = `{
           {
             "name": "Abhi Saxena",
             "Qualification": "",
-            "Picture": "https://i.ibb.co/PFHdbDM/Abhi-Saxena.jpg",
+            "Picture": "https://i.ibb.co/09QtdcM/Abhi-Saxena.jpg",
             "Linkedin": "https://www.linkedin.com/in/abhi-saxena-722b0b142/"
           },
           {
@@ -137,7 +137,7 @@ var json = `{
           {
             "name": "Rishi Arya Juturu",
             "Qualification": "M.Eng Internetworking",
-            "Picture": "https://i.ibb.co/StJ5R4s/Rishi-Arya-Juturu.jpg",
+            "Picture": "https://i.ibb.co/wWMhbwf/Rishi-Arya-Juturu.jpg",
             "Linkedin": "https://www.linkedin.com/in/jutururishiarya/"
           },
           {
@@ -157,7 +157,7 @@ var json = `{
           {
             "name": "Vaishnavi Kanuganti",
             "Qualification": "",
-            "Picture": "https://i.ibb.co/6rm1kLD/Vaishnavi.jpg",
+            "Picture": "https://i.ibb.co/k1FKX3r/Vaishnavi.jpg",
             "Linkedin": "https://www.linkedin.com/in/vaishnavikanuganti"
           },
           {
