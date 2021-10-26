@@ -8,16 +8,22 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
   if (filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
 
     $userName = $_POST['name'];
-    $userEmail = "support@mumbaihealthproject.com";
+    $userEmail = $_POST['mail'];
     $messageSubject = $_POST['subject'];
     $message = $_POST['message'];
     
     $to = "mumbaihealthproject@gmail.com";         // Change the "To" mail id 
-    $body = "";
-
-    $body .= "From: " . $userName . "\r\n";
-    $body .= "Email: " . $userEmail . "\r\n";
-    $body .= "Message: " . $message . "\r\n";
+    $body = "<html>
+    <head>
+    <title>Message From Contact Us page</title>
+    </head>
+    <body>
+    <h2>From: "+ $userName +"</h2>
+    <p>Email: "+ $userEmail +"</p>
+    <p>"+ $message +"</p>
+    </body>
+    </html>";
+    
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     mail($to, $messageSubject, $body, $headers);
@@ -107,9 +113,9 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
     ?>
 
 
-        <!-- <div class="rightside">
-      <img src="images/mumbai_map.jpg" alt="mumbai_map" class="mum_map" />
-    </div> -->
+        <div class="rightside">
+            <img src="images/letter.jpg" alt="mumbai_map" class="mum_map" />
+        </div>
     </div>
 
     <!-- Footer  starts here -->
