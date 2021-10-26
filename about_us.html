@@ -1,30 +1,3 @@
-<?php
-
-$message_sent = false;
-
-if (isset($_POST['mail']) && $_POST['mail'] != '') {
-
-  if (filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
-
-    $userName = $_POST['name'];
-    $userEmail = $_POST['mail'];
-    $messageSubject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    $to = "test@gmail.com";         // Change the "To" mail id 
-    $body = "";
-
-    $body .= "From: " . $userName . "\r\n";
-    $body .= "Email: " . $userEmail . "\r\n";
-    $body .= "Message: " . $message . "\r\n";
-
-    mail($to, $messageSubject, $body);
-
-    $message_sent = true;
-  }
-}
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -35,6 +8,7 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
         content=" -A non-profit initiative dedicated towards equalising healthcare services in a city riddled with inequalities" />
     <title>Mumbai health project</title>
     <link rel="stylesheet" href="main.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -51,60 +25,92 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav__wrapper">
-                    <li class="nav__item"><a href="./about_us.html">Soch</a></li>
+                    <li class="nav__item"><a href="/about_us.html">Soch</a></li>
                     <!-- <li class="line_ver"></li> -->
-                    <li class="nav__item"><a href="./seekh.html">Seekh</a></li>
+                    <li class="nav__item"><a href="/seekh.html">Seekh</a></li>
                     <!-- <li class="line_ver"></li> -->
-                    <!-- <li class="nav__item"><a href="./samaaj.html">Samaaj</a></li> -->
+                    <!-- <li class="nav__item"><a href="/samaaj.html">Samaaj</a></li> -->
                     <!-- <li class="line_ver"></li> -->
-                    <!-- <li class="nav__item"><a href="./support_us.html">Support</a></li> -->
+                    <!-- <li class="nav__item"><a href="/support_us.html">Support</a></li> -->
                     <!-- <li class="line_ver"></li> -->
-                    <li class="nav__item">
-                        <a href="./contact_us.php">Contact Us</a>
-                    </li>
+                    <li class="nav__item"><a href="/contact_us.php">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--Header Ends Here  -->
+    <!-- About us starts here -->
+    <div class="container-main">
+        <p class="head heading__1">Har Gully Healthy - A Dream. . . .</p>
 
-    <div class="container" style="display: flex; flex-wrap: wrap">
-        <?php
-    if ($message_sent) {
+        <div class="sub-container-para">
+            <p class="para-1">
+                Mumbai is a hub of dreams and hopes. One of the many industries that
+                thrive in the Maximum City, healthcare wasn't the most popular one
+                until the pandemic slowed us down.
+            </p>
 
+            <p class="para-2">
+                It was looming in our eyes more than ever that a single city regularly
+                becomes a guiding lamp for neighbouring states and people who travel
+                from as far as 2000 kms to seek quality healthcare.
+            </p>
 
-    ?>
+            <p class="para-3">
+                There is a stark disparity in the distribution of healthcare services
+                and model of delivery.
+            </p>
 
-        <h2 style="text-align: center">Thanks, We will get in touch very soon</h2>
+            <p class="para-4">
+                Mumbai Health Project aims to create a conduit between the extremes to
+                arrive at a balance, providing better access to quality healthcare to
+                the section of the society that struggles the most both financially
+                and in terms of lack of awareness.
+            </p>
 
-        <!-- I have not done the modal now after two days that will be also completed -->
-
-        <?php
-    } else {
-    ?>
-
-        <div class="leftside">
-            <form class="contact-form" action="contact_us.php" method="post">
-                <h1 class="c_us">Contact Us</h1>
-                <input type="text" id="txt_input" name="name" placeholder="Full name" />
-                <br />
-                <input type="text" id="txt_input" name="mail" placeholder="your e-mail" /><br />
-                <input type="text" id="txt_input" name="subject" placeholder="subject" /><br />
-                <textarea name="message" placeholder="Message" id="message_area"></textarea><br />
-
-                <button type="submit" class="btn" name="submit">Send E-mail</button>
-            </form>
+            <p class="para-5">
+                A step closer to universal healthcare, come join us in this journey of
+                making
+            </p>
         </div>
-
-        <?php
-    };
-    ?>
-
-        <!-- <div class="rightside">
-      <img src="images/mumbai_map.jpg" alt="mumbai_map" class="mum_map" />
-    </div> -->
+        <p class="head heading__2">Har Gully, A Healthy Gully!</p>
     </div>
 
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="container-2">
+        <div class="sub-container mission">
+            <h3>Mission</h3>
+            <ul style="list-style-type: disc">
+                <li>&#9755; Affordable Healthcare within reach initiate.</li>
+
+                <li>
+                    &#9755; Preventive Healthcare Behavioural Change amongst the Urban
+                    Poor with a Focus on Infectious Diseases.
+                </li>
+
+                <li>
+                    &#9755; Provide a Platform for Doctors to create a Socially
+                    Motivated Entrepreneurial Community.
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-container vision">
+            <h3>Vision</h3>
+            <p>Take Healthcare To Every Gully</p>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <p class="head heading__3">Meet The Team</p>
+        <div class="team_listing"></div>
+    </div>
+
+    <!-- About us ends here -->
     <!-- Footer  starts here -->
     <footer class="footer">
         <div class="container-footer">
@@ -147,7 +153,7 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
     </footer>
     <!-- Footer ends here -->
 
-    <script type="text/javascript" src="/main.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
