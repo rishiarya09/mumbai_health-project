@@ -1,0 +1,168 @@
+{
+  "Advisory Team": [
+    {
+      "name": "Dr. Malvika Neeraj",
+      "Qualification": "MBBS | MBA(Pharmaceutical Management)",
+      "Picture": "https://ibb.co/px1Mxn9",
+      "Linkedin": "https://www.linkedin.com/in/dr-malvika-neeraj-671967b9/"
+    },
+    {
+      "name": "Dr.Harshvardhan Bansode",
+      "Qualification": "MBBS | AFIH",
+      "Picture": "https://ibb.co/XpxnW2P",
+      "Linkedin": "https://www.linkedin.com/in/harshvardhan-bansode-1bb731111/"
+    },
+    {
+      "name": "Dr. Vivek Waghela",
+      "Qualification": "MBBS | MD(Medicine)",
+      "Picture": "https://ibb.co/HGJfGXp",
+      "Linkedin": "https://www.linkedin.com/in/vivek-waghela-a45ab388/"
+    },
+    {
+      "name": "Dr. Dipika Shah",
+      "Qualification": "MBBS | MD",
+      "Picture": "https://ibb.co/VJGjgPs",
+      "Linkedin": "link"
+    }
+  ],
+  "HealthCare Team": [
+    {
+      "name": "Priyancka Mertia",
+      "Qualification": "MSc(Biochemistry) | MBA(Pharmaceutical Management)",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Uddhao Zambhare ",
+      "Qualification": "MBBS | MD(Skin & VD)",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Afreen Mulla",
+      "Qualification": "MBBS | MS(OBGY)",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Himani Murdeshwar",
+      "Qualification": "MBBS",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Pooja Shah",
+      "Qualification": "MBBS, MD (Ophthalmology), DNB, FICO(Retina), FAICO(Retina)",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Eshan Dabhade",
+      "Qualification": "MBBS, MD (Pediatrics)",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Vaishal Shah",
+      "Qualification": "MBBS,MD(Cardiology),IDCCM",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Salman Patel",
+      "Qualification": "MBBS,MD(Ophthalmology)",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Preeti Yadav",
+      "Qualification": "MBBS",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Dr Bijal Sangoi",
+      "Qualification": "MBBS, MD (Psychiatry)",
+      "Picture": "",
+      "Linkedin": ""
+    }
+  ],
+  "Tech And Design": [
+    {
+      "name": "Abhi Saxena",
+      "Qualification": "",
+      "Picture": "https://ibb.co/jbXSxJz",
+      "Linkedin": "https://www.linkedin.com/in/abhi-saxena-722b0b142/"
+    },
+    {
+      "name": "Manat Singh",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": "https://www.linkedin.com/in/manat-singh-7a8420121"
+    },
+    {
+      "name": "Rishi Arya Juturu",
+      "Qualification": "M.Eng Internetworking",
+      "Picture": "https://ibb.co/JvCm5wB",
+      "Linkedin": "https://www.linkedin.com/in/jutururishiarya/"
+    },
+    {
+      "name": "Mahika",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Navyata Neeraj",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": "https://www.linkedin.com/in/navyata-neeraj/"
+    }
+  ],
+  "Project Design And Development": [
+    {
+      "name": "Vaishnavi Kanuganti",
+      "Qualification": "",
+      "Picture": "https://ibb.co/MZsGmQP",
+      "Linkedin": "https://www.linkedin.com/in/vaishnavikanuganti"
+    },
+    {
+      "name": "Shubhang Luniya",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": "https://www.linkedin.com/in/shubhang-luniya-895a91159/"
+    }
+  ],
+  "Community Engagement": [
+    {
+      "name": "Dr Rashika Anand",
+      "Qualification": "",
+      "Picture": "yes",
+      "Linkedin": "https://www.linkedin.com/in/rashika-anand-777853154/"
+    },
+    {
+      "name": "Jennifer Collins",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": "https://www.linkedin.com/in/jennifer-collins-a0480a204//"
+    },
+    {
+      "name": "Mahek Shaikh",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Riya Sharma ",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": ""
+    },
+    {
+      "name": "Anjali Ujjainwal ",
+      "Qualification": "",
+      "Picture": "",
+      "Linkedin": ""
+    }
+  ]
+}
